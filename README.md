@@ -1,24 +1,25 @@
 # Odoo migration scripts from v17 to v18
-Scripts for the migration of odoo v17 to v18.
+Scripts for the migration of odoo version 17 to 18.
 
 `migrate_tree_to_list_xml_tag.py`: Change tree tag to list tag.
-`migrate_chatter_xml_tag.py`: Change `<div class="oe_chatter">...</div>` to `<chatter/>` tag.
+
+`migrate_chatter_xml_tag.py`: Change the tag `<div class="oe_chatter">...</div>` to `<chatter/>` tag.
 
 
 ## Installation
 Install `lxml`:
 ```
-    pip install lxml
+pip install lxml
 ```
 
 ## Usage
 Run the python migration scripts with the file paths to the xml view files intended to change as command line arguments. For example:
 ```
-    python migrate_tree_to_list_xml_tag.py file1.xml file2.xml ...
+python migrate_tree_to_list_xml_tag.py file1.xml file2.xml ...
 ```
 Or also:
 ```
-    python migrate_tree_to_list_xml_tag.py views/*.xml
+python migrate_tree_to_list_xml_tag.py views/*.xml
 ```
 
 ## Some changes from v17 to v18
